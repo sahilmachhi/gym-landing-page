@@ -1,8 +1,8 @@
 import React from 'react';
-import { Squares } from './squares-background';
-import { Spotlight } from './Spotlight';
-import SparklesText from './sparkles-text';
-import { EyeCatchingButton_v1 } from './CallToActionButton';
+import { Squares } from './ui/squares-background';
+import { Spotlight } from './ui/Spotlight';
+import SparklesText from './ui/sparkles-text';
+import { EyeCatchingButton_v1 } from './ui/CallToActionButton';
 
 
 

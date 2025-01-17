@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import gymImage from "../../../public/pexels-willpicturethis-1954524.jpg"
+import gymImage from "../../public/pexels-willpicturethis-1954524.jpg"
 
 const AboutSection: React.FC = () => {
     return (
