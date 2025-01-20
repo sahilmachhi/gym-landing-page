@@ -1,7 +1,10 @@
 import React from 'react';
 import { CardBody, CardContainer, CardItem } from './ui/3d-card';
-import personalTraining from "../../public/pexels-willpicturethis-1954524.jpg"
+// import personalTraining from "../../public/pexels-willpicturethis-1954524.jpg"
 import Image from 'next/image';
+import personalTraining from "../../public/Features/istockphoto-1503324969-612x612.jpg"
+import Classes from "../../public/Features/64a12c30d307e16231853618_group fitness class.webp"
+import Strength from "../../public/Features/tacticalphysique1200x630-min.jpeg"
 
 
 const FeaturesSection = () => {
@@ -15,14 +18,14 @@ const FeaturesSection = () => {
         {
             title: 'Fun & Engaging Group Classes',
             description: 'Join our high-energy group classes like yoga, Zumba, HIIT, and more. Work out with others, stay motivated, and make fitness a fun experience.',
-            image: personalTraining,
+            image: Classes,
             CTA: "View Class Schedule"
           },
 
           {
             title: 'Strength & Conditioning Workouts',
             description: 'Build muscle, increase endurance, and improve overall fitness with our cutting-edge equipment and expertly designed strength training programs.',
-            image: personalTraining,
+            image: Strength,
             CTA: "Get Started Today"
           },
   

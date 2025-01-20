@@ -1,12 +1,14 @@
 "use client"
 import React from 'react';
 import { FocusCards } from './ui/focus-card';
-import gymTrainer from "../../public/pexels-willpicturethis-1954524.jpg"
+import Priya from "../../public/GymTrainers/Personal-Trainer-Portraits.jpg"
+import Michael from "../../public/GymTrainers/roles-and-responsibilities-of-a-personal-trainer-1024x683.jpg"
+import Sarah from "../../public/GymTrainers/portrait-gym-trainer-using-digital-tablet_107420-30388.jpg"
 
 const TrainerSection = () => {
     const trainers = [
         {
-          name: "Sarah Johnson",
+          name: "Alexander",
           specialization: "Strength Training & Weightlifting",
           certifications: [
             "Certified Strength and Conditioning Specialist (CSCS)",
@@ -14,7 +16,7 @@ const TrainerSection = () => {
           ],
           experience: "8+ years",
           quote: "I believe in building strength—inside and out.",
-          image: gymTrainer, // Replace with actual image URL
+          image: Sarah, // Replace with actual image URL
         },
         {
           name: "Michael Lee",
@@ -25,7 +27,7 @@ const TrainerSection = () => {
           ],
           experience: "5+ years",
           quote: "Fitness is about pushing limits and redefining possibilities.",
-          image: gymTrainer, // Replace with actual image URL
+          image: Michael, // Replace with actual image URL
         },
         {
           name: "Priya Desai",
@@ -36,7 +38,7 @@ const TrainerSection = () => {
           ],
           experience: "6+ years",
           quote: "A strong body starts with a peaceful mind.",
-          image: gymTrainer, // Replace with actual image URL
+          image: Priya, // Replace with actual image URL
         },
       ];
   return (

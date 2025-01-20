@@ -10,8 +10,8 @@ export default function ContactSection() {
     return (
         <div className='mt-[140px]'>
             <section className='mx-auto text-center flex items-center flex-col justify-center container px-10'>
-                <h2 className='text-center text-3xl font-bold  tracking-tight text-white md:text-5xl max-w-4xl'>What Our Members Say</h2>
-                <p className='text-center text-2xl mt-6 text-white/70 max-w-5xl'>Hear from our members about their incredible fitness journeys, their successes, and why they love being part of our community.</p>
+                <h2 className='text-center text-3xl font-bold  tracking-tight text-white md:text-5xl max-w-4xl'>Get in Touch with Us</h2>
+                <p className='text-center text-2xl mt-6 text-white/70 max-w-5xl'>Have questions or need assistance? Reach out using the contact form, email, or phone. You can also visit us—check the map for directions. We’re here to help you start your fitness journey!</p>
 
                 {/* Main Grid */}
                 <div className="grid md:grid-cols-2 gap-8 w-full max-w-6xl mt-8">
@@ -47,7 +47,7 @@ export default function ContactSection() {
                                         justifySelf:"start"
                                     }
                                 }>email@pagedone.com</h3>
-                                <Button className="w-full bg-[#d0d4db] text-white hover:bg-black rounded-3xl">
+                                <Button className="w-full bg-black text-[#d0d4db] hover:text-white hover:bg-black rounded-3xl">
                                     Contact Us
                                 </Button>
                             </CardContent>
@@ -57,13 +57,13 @@ export default function ContactSection() {
                     {/* Right Column - Contact Form */}
                     <div className="space-y-6">
                         <div className="space-y-4">
-                            <Input type="text" placeholder="Name" className="h-12 px-4 rounded-3xl border border-spaci border-[#b4b6b9]"/>
+                            <Input type="text" placeholder="Name" className="h-12 px-4 rounded-3xl border border-[#b4b6b9]"/>
                             <div className="grid grid-cols-2 gap-4">
                                 <Input type="email" placeholder="Email Address" className="h-12 px-4 rounded-3xl"/>
                                 <Input type="tel" placeholder="Phone Number" className="h-12 px-4 rounded-3xl"/>
                             </div>
                             <Textarea placeholder="Message Here..." className="min-h-[200px] resize-none p-4 rounded-3xl"/>
-                            <Button className="w-full h-12 rounded-3xl  text-black bg-white">
+                            <Button className="w-full h-12 rounded-3xl  text-black bg-white hover:bg-white">
                                 Send Message
                             </Button>
                         </div>
