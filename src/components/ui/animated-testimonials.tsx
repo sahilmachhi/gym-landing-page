@@ -68,13 +68,13 @@ export const AnimatedTestimonials = ({
                     scale: isActive(index) ? 1 : 0.95,
                     z: isActive(index) ? 0 : -100,
                     rotate: isActive(index) ? 0 : getRotateY(index),
-                    zIndex: isActive(index) ? 999 : testimonials.length - index,
+                    zIndex: isActive(index) ? 10 : testimonials.length - index,
                     y: isActive(index) ? [0, -80, 0] : 0,
                   }}
                   exit={{
                     opacity: 0,
                     scale: 0.9,
-                    z: 100,
+                    z: 20,
                     rotate: getRotateY(index),
                   }}
                   transition={{

@@ -3,7 +3,7 @@ import {ArrowRight} from "lucide-react"
 
 export default function CTASection() {
     return (
-        <div className='mt-[140px] relative'>
+        <div className='pt-[140px] relative' id="cta">
             <div className="absolute w-full h-[80px] bottom-0 bg-gradient-to-b from-transparent  to-black"></div>
             <div className="absolute w-full h-[60px] bg-gradient-to-b from-black to-transparent"></div>
             <section className="bg-gradient-to-br from-gray-800 via-black/60 to-gray-700 py-16 px-4 sm:px-6 lg:px-8">

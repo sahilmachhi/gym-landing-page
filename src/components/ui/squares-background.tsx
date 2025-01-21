@@ -91,7 +91,7 @@ export function Squares({
     }
 
     const updateAnimation = () => {
-      const effectiveSpeed = Math.max(speed, 0.0)
+      const effectiveSpeed = Math.max(speed, 0.1)
 
       switch (direction) {
         case "right":

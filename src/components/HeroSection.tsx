@@ -10,11 +10,11 @@ import HeroImageAnimation from './ui/HeroImageAnimation';
 const Hero = () => {
   return (
     <>
-      <div className="relative h-[768px]">
+      <div className="relative h-[768px]" id="home">
         <HeroImageAnimation />
         <div className='absolute w-full h-[90px] z-10 bottom-0 bg-gradient-to-b from-transparent to-black'></div>
         <Squares className="absolute top-0 left-0 w-full h-full overflow-hidden z-0"
-          speed={0} />
+          speed={1} direction="diagonal" squareSize={40} />
         <section className="relative container mx-auto px-10"
           style={
             { overflow: "hidden" }

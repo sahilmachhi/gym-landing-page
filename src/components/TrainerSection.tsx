@@ -43,7 +43,7 @@ const TrainerSection = () => {
       ];
   return (
     <>
-    <div className='mt-[140px]'>
+    <div className='pt-[140px]' id='trainer'>
         <section className='mx-auto text-center flex items-center flex-col justify-center container px-10'>
        <div>
        <h2 className='text-center text-3xl font-bold  tracking-tight text-white md:text-5xl max-w-4xl'>Meet Our Expert Trainers</h2>

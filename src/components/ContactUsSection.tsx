@@ -8,7 +8,7 @@ import { start } from "repl"
 
 export default function ContactSection() {
     return (
-        <div className='mt-[140px]'>
+        <div className='pt-[140px]' id="contact">
             <section className='mx-auto text-center flex items-center flex-col justify-center container px-10'>
                 <h2 className='text-center text-3xl font-bold  tracking-tight text-white md:text-5xl max-w-4xl'>Get in Touch with Us</h2>
                 <p className='text-center text-2xl mt-6 text-white/70 max-w-5xl'>Have questions or need assistance? Reach out using the contact form, email, or phone. You can also visit us—check the map for directions. We’re here to help you start your fitness journey!</p>

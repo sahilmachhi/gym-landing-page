@@ -38,7 +38,7 @@ const membershipPlans = [
 
 const PlansSection = () => {
 
-    return (<div className='mt-[140px]'>
+    return (<div className='pt-[140px]' id="plan">
         <section className='mx-auto text-center flex items-center flex-col justify-center container px-10'>
             <h2 className='text-center text-3xl font-bold  tracking-tight text-white md:text-5xl max-w-4xl'>Flexible Membership Plans to Suit Your Fitness Goals</h2>
             <p className='text-center text-2xl mt-6 text-white/70 max-w-5xl'>Choose a plan that works best for you. Whether you're just starting your fitness journey or looking to take your workouts to the next level, our membership options offer something for everyone. Enjoy transparent pricing with no hidden fees!</p>

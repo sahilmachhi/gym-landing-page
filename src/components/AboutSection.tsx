@@ -4,8 +4,8 @@ import gymImage from "../../public/pexels-willpicturethis-1954524.jpg"
 
 const AboutSection: React.FC = () => {
     return (
-        <div className='mt-[140px]'>
-            <section className='mx-auto text-center container px-10'>
+        <div className='pt-[140px]' id='about' >
+            <section className='mx-auto text-center container px-10' >
                 <div className='grid md:grid-cols-2 grid-cols-1 gap-5'>
                     <div className='flex lg:items-start items-center justify-center flex-col'>
                         <h1 className='text-3xl font-bold mb-4 lg:text-left text-center'>  

@@ -62,11 +62,18 @@
   }
 } */
 
+html {
+  scroll-behavior: smooth;
+  }
+
 @layer base {
   * {
     /* @apply border-border; */
   }
   body {
     @apply bg-black text-white;
+  }
+  .navbar_text {
+    @apply px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold hover:bg-white/70 hover:text-white transition duration-300;
   }
 }

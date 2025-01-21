@@ -32,7 +32,7 @@ const FeaturesSection = () => {
         
     ]
   return (
-    <div className='mt-[140px]'>
+    <div className='pt-[140px]' id='features'>
         <section className='mx-auto text-center flex items-center flex-col justify-center container px-10'>
             <h2 className='text-center text-3xl font-bold  tracking-tight text-white md:text-5xl max-w-4xl'>Transform Your Fitness Journey with Our Exceptional Features</h2>
             <p className='text-center text-2xl mt-6 text-white/70 max-w-5xl'>Discover a world-class gym experience designed to cater to every fitness level. From personalized training sessions to energizing group classes and cutting-edge strength and conditioning programs, we offer everything you need to achieve your goals</p>
