@@ -5,13 +5,14 @@ import {Textarea} from "@/components/ui/textarea"
 import {Card, CardContent} from "@/components/ui/card"
 import {MessageSquare, Phone} from 'lucide-react'
 import { start } from "repl"
-
+import {content} from "../lib/constant"
 export default function ContactSection() {
+    const {contact} = content
     return (
         <div className='pt-[140px]' id="contact">
             <section className='mx-auto text-center flex items-center flex-col justify-center container px-10'>
-                <h2 className='text-center text-3xl font-bold  tracking-tight text-white md:text-5xl max-w-4xl'>Get in Touch with Us</h2>
-                <p className='text-center text-2xl mt-6 text-white/70 max-w-5xl'>Have questions or need assistance? Reach out using the contact form, email, or phone. You can also visit us—check the map for directions. We’re here to help you start your fitness journey!</p>
+                <h2 className='text-center text-3xl font-bold  tracking-tight text-white md:text-5xl max-w-4xl'>{contact.header}</h2>
+                <p className='text-center text-2xl mt-6 text-white/70 max-w-5xl'>{contact.description}</p>
 
                 {/* Main Grid */}
                 <div className="grid md:grid-cols-2 gap-8 w-full max-w-6xl mt-8">
@@ -24,9 +25,9 @@ export default function ContactSection() {
                                     <div className="bg-white p-2 rounded-xl">
                                     <Phone className="h-6 w-6 text-black "/>
                                     </div>
-                                    <span className="font-medium">Call Us Directly At</span>
+                                    <span className="font-medium">{contact.phone.phoneHeader}</span>
                                 </div>
-                                <h3 className="text-3xl font-bold mb-6 justify-self-start">470 - 601 - 1911</h3>
+                                <h3 className="text-3xl font-bold mb-6 justify-self-start">{contact.phone.phoneNumber}</h3>
                                 <Button variant="secondary" className="w-full bg-[#7C7EF2] hover:bg-[#8587F3] text-white border-none rounded-3xl">
                                     Contact Us
                                 </Button>
@@ -40,13 +41,13 @@ export default function ContactSection() {
                                 <div className="bg-white p-2 rounded-xl">
                                     <MessageSquare className="h-6 w-6 text-black"/>
                                     </div>
-                                    <span className="font-medium">Chat With Our Team</span>
+                                    <span className="font-medium">{contact.email.emailHeader}</span>
                                 </div>
                                 <h3 className="text-2xl font-bold mb-6" style={
                                     {
                                         justifySelf:"start"
                                     }
-                                }>email@pagedone.com</h3>
+                                }>{contact.email.email}</h3>
                                 <Button className="w-full bg-black text-[#d0d4db] hover:text-white hover:bg-black rounded-3xl">
                                     Contact Us
                                 </Button>

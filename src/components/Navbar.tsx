@@ -1,54 +1,8 @@
 import React from "react";
-
+import {content} from "../lib/constant"
 const Navbar = () => {
-    const NavbarItems = [
-        {
-            href: "#home",
-            text: "Home"
-        },
-        {
-            href: "#about",
-            text: "About"
-        },
-        {
-            href: "#features",
-            text: "Features"
-        },
-        {
-            href: "#plan",
-            text: "Plans"
-        }, 
-        {
-            href: "#trainer",
-            text: "Trainer"
-        },
-         {
-            href: "#contact",
-            text: "Contact"
-        },     
-         {
-            href: "#cta",
-            text: "Join Now"
-        }
-    ]
-    const mobileNavItems = [
-        {
-            href:"#home",
-            text:"Home"
-        },
-        {
-            href:"#about",
-            text:"About"
-        },
-        {
-            href:"#features",
-            text:"Features"
-        },
-        {
-            href:"#contact",
-            text:"Contact"
-        }
-    ]
+    const NavbarItems = content.navbar.navbarItems;
+    const mobileNavItems = content.navbar.mobileNavItems;
     return (
         <div className="flex justify-center items-center top-3 fixed w-full z-50">
             <nav className="hidden lg:flex gap-1 p-0.5 border border-white/15 rounded-full backdrop-blur-3xl z-50">

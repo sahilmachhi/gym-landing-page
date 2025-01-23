@@ -2,41 +2,9 @@ import Link from "next/link"
 import { Facebook, Instagram, Twitter, Youtube, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-
-const footerContent = {
-  quickLinks: [
-    { name: "Home", href: "/" },
-    { name: "About Us", href: "/about" },
-    { name: "Membership Plans", href: "/membership" },
-    { name: "Classes", href: "/classes" },
-    { name: "Contact Us", href: "/contact" },
-  ],
-  support: [
-    { name: "FAQs", href: "/faqs" },
-    { name: "Privacy Policy", href: "/privacy-policy" },
-    { name: "Terms & Conditions", href: "/terms-conditions" },
-    { name: "Careers", href: "/careers" },
-    { name: "Feedback", href: "/feedback" },
-  ],
-  socialMedia: [
-    { platform: "Facebook", href: "https://facebook.com/YourGym", icon: Facebook },
-    { platform: "Instagram", href: "https://instagram.com/YourGym", icon: Instagram },
-    { platform: "Twitter", href: "https://twitter.com/YourGym", icon: Twitter },
-    { platform: "YouTube", href: "https://youtube.com/YourGym", icon: Youtube },
-  ],
-  contactInfo: {
-    address: "123 Fitness Street, Wellness City, Fitland 45678",
-    email: "contact@yourgym.com",
-    phone: "+1 (555) 123-4567",
-    businessHours: "Mon - Sat: 6 AM - 9 PM | Sun: 8 AM - 5 PM",
-  },
-  newsletter: {
-    title: "Join Our Community",
-    description: "Subscribe to receive the latest updates, offers, and fitness tips straight to your inbox.",
-  },
-}
-
+import { content } from "@/lib/constant"
 function Footer() {
+const {footer} = content
   return (
     <footer className="bg-black text-blue-100 py-12">
 
@@ -45,7 +13,7 @@ function Footer() {
           <div>
             <h2 className="text-xl font-bold mb-4 text-white">Quick Links</h2>
             <ul className="space-y-2">
-              {footerContent.quickLinks.map((link) => (
+              {footer.quickLinks.map((link) => (
                 <li key={link.name}>
                   <Link href={link.href} className="hover:text-blue-300 transition-colors">
                     {link.name}
@@ -57,7 +25,7 @@ function Footer() {
           <div>
             <h2 className="text-xl font-bold mb-4 text-white">Support</h2>
             <ul className="space-y-2">
-              {footerContent.support.map((link) => (
+              {footer.quickLinks.map((link) => (
                 <li key={link.name}>
                   <Link href={link.href} className="hover:text-blue-300 transition-colors">
                     {link.name}
@@ -69,23 +37,23 @@ function Footer() {
           <div>
             <h2 className="text-xl font-bold mb-4 text-white">Contact Info</h2>
             <address className="not-italic">
-              <p>{footerContent.contactInfo.address}</p>
+              <p>{footer.contactInfo.address}</p>
               <p className="mt-2">
-                <a href={`mailto:${footerContent.contactInfo.email}`} className="hover:text-blue-300 transition-colors">
-                  {footerContent.contactInfo.email}
+                <a href={`mailto:${footer.contactInfo.email}`} className="hover:text-blue-300 transition-colors">
+                  {footer.contactInfo.email}
                 </a>
               </p>
               <p className="mt-2">
-                <a href={`tel:${footerContent.contactInfo.phone}`} className="hover:text-blue-300 transition-colors">
-                  {footerContent.contactInfo.phone}
+                <a href={`tel:${footer.contactInfo.phone}`} className="hover:text-blue-300 transition-colors">
+                  {footer.contactInfo.phone}
                 </a>
               </p>
-              <p className="mt-2">{footerContent.contactInfo.businessHours}</p>
+              <p className="mt-2">{footer.contactInfo.businessHours}</p>
             </address>
           </div>
           <div>
-            <h2 className="text-xl font-bold mb-4 text-white">{footerContent.newsletter.title}</h2>
-            <p className="mb-4">{footerContent.newsletter.description}</p>
+            <h2 className="text-xl font-bold mb-4 text-white">{footer.newsletter.title}</h2>
+            <p className="mb-4">{footer.newsletter.description}</p>
             <form className="flex flex-col space-y-2">
               <Input
                 type="email"
@@ -102,7 +70,7 @@ function Footer() {
           <div className="flex flex-wrap justify-between items-center">
             <p>&copy; {new Date().getFullYear()} YourGym. All rights reserved.</p>
             <div className="flex space-x-4 mt-4 lg:mt-0">
-              {footerContent.socialMedia.map((social) => (
+              {footer.socialMedia.map((social) => (
                 <a
                   key={social.platform}
                   href={social.href}
