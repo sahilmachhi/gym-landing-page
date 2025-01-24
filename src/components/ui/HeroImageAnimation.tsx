@@ -1,9 +1,11 @@
 "use client"
 import { motion } from "framer-motion"
 import Image from "next/image"
-import WomenGym from "../../../public/Hero/fd748581-3be3-4115-a8db-cce18866934e.jpg"
-import ManGym from "../../../public/Hero/funny-stylish-bodybuilder-with-tattoo-his-arm-doing-exercises-with-dumbbells-isolated-dark-background.jpg"
+import { content } from "@/lib/constant"
+
 const HeroImageAnimation = () => {
+  const {ManGym, WomenGym} = content.hero.imageSection
+
   return (
     <>
      <motion.div initial={{ scale: 0 }}
