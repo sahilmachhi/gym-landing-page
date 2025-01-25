@@ -1,6 +1,6 @@
 // hero section 
-import WomenGym from "../../../public/Hero/fd748581-3be3-4115-a8db-cce18866934e.jpg"
-import ManGym from "../../../public/Hero/funny-stylish-bodybuilder-with-tattoo-his-arm-doing-exercises-with-dumbbells-isolated-dark-background.jpg"
+import WomenGym from "../../public/Hero/fd748581-3be3-4115-a8db-cce18866934e.jpg"
+import ManGym from "../../public/Hero/funny-stylish-bodybuilder-with-tattoo-his-arm-doing-exercises-with-dumbbells-isolated-dark-background.jpg"
 
 // about section
 import gymImage from "../../public/pexels-willpicturethis-1954524.jpg"
@@ -28,7 +28,6 @@ import {
     Instagram,
     Twitter,
     Youtube,
-    Mail
 } from "lucide-react"
 
 export const content = {
