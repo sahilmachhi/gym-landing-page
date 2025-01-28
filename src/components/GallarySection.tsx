@@ -36,14 +36,14 @@ const GallarySection = () => {
               <Image
                 src={image.imageThree}
                 alt="Placeholder Image 3"
-                className=""
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="bg-gray-800 rounded-lg overflow-hidden">
               <Image
                 src={image.imageFour}
                 alt="Placeholder Image 4"
-                className=""
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

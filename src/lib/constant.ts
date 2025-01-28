@@ -11,10 +11,10 @@ import Classes from "../../public/Features/64a12c30d307e16231853618_group fitnes
 import Strength from "../../public/Features/tacticalphysique1200x630-min.jpeg";
 
 // image section
-import imageOne from "../../public/gallary/66c718c13f75fe606893703a_gallery-image-02.avif";
-import imageTwo from "../../public/gallary/66c718c13f75fe606893703b_gallery-image-01.avif";
-import imageThree from "../../public/gallary/66c718c13f75fe606893704b_gallery-image-04.avif";
-import imageFour from "../../public/gallary/66c718c13f75fe606893704c_gallery-image-03.avif";
+import imageOne from "../../public/gallary/66c718c13f75fe606893703a_gallery-image-02.jpg";
+import imageTwo from "../../public/gallary/66c718c13f75fe606893703b_gallery-image-01.jpg";
+import imageThree from "../../public/gallary/66c718c13f75fe606893704b_gallery-image-04.jpg";
+import imageFour from "../../public/gallary/66c718c13f75fe606893704c_gallery-image-03.jpg";
 // import imageFive from "../../public/gallary/66c718c13f75fe606893703a_gallery-image-06.avif";
 // import imageSix from "../../public/gallary/66c718c13f75fe606893703a_gallery-image-07.avif";
 
@@ -59,10 +59,6 @@ export const content = {
       {
         href: "#contact",
         text: "Contact",
-      },
-      {
-        href: "#cta",
-        text: "Join Now",
       },
     ],
     mobileNavItems: [
