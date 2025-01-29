@@ -24,7 +24,9 @@ export const AnimatedTestimonials = ({
 
   useEffect(() => {
     // Generate random rotations for each testimonial on the client side
-    const rotations = testimonials.map(() => Math.floor(Math.random() * 21) - 10);
+    const rotations = testimonials.map(
+      () => Math.floor(Math.random() * 21) - 10
+    );
     setRandomRotations(rotations);
   }, [testimonials]);
 

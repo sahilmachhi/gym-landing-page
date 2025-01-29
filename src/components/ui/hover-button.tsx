@@ -128,7 +128,7 @@ const HoverButton = React.forwardRef<HTMLButtonElement, HoverButtonProps>(
             }}
           />
         ))}
-        {children}
+        <a href="#cta">{children}</a>
       </button>
     );
   }

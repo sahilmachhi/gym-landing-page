@@ -14,36 +14,40 @@ const GallarySection = () => {
             {description}
           </p>
           <div className="grid grid-cols-3 gap-4 mt-10">
-            <div className="bg-gray-800 rounded-lg overflow-hidden">
+            <div className="bg-gray-800 rounded-3xl overflow-hidden">
               <Image
                 src={image.imageOne}
                 alt="Placeholder Image 1"
-                className="w-full h-full object-cover"
+                unoptimized={true}
+                className="w-full h-full object-cover gallary_Image scale-[1.1] object-left"
                 width={500}
                 height={300}
               />
             </div>
-            <div className="bg-gray-800 rounded-lg col-span-2 overflow-hidden">
+            <div className="bg-gray-800 rounded-3xl col-span-2 overflow-hidden">
               <Image
                 src={image.imageTwo}
                 alt="Placeholder Image 2"
-                className="w-full h-full object-cover"
+                unoptimized={true}
+                className="w-full h-full object-cover gallary_Image scale-[1.1]"
                 width={500}
                 height={300}
               />
             </div>
-            <div className="bg-gray-800 rounded-lg col-span-2 overflow-hidden">
+            <div className="bg-gray-800 rounded-3xl col-span-2 overflow-hidden">
               <Image
                 src={image.imageThree}
                 alt="Placeholder Image 3"
-                className="w-full h-full object-cover"
+                unoptimized={true}
+                className="w-full h-full object-cover gallary_Image scale-[1.1]"
               />
             </div>
-            <div className="bg-gray-800 rounded-lg overflow-hidden">
+            <div className="bg-gray-800 overflow-hidden rounded-3xl">
               <Image
                 src={image.imageFour}
                 alt="Placeholder Image 4"
-                className="w-full h-full object-cover"
+                unoptimized={true}
+                className="w-full h-full object-cover gallary_Image scale-[1.1]"
               />
             </div>
           </div>

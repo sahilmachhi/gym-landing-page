@@ -25,17 +25,17 @@ interface FaqSectionProps extends React.HTMLAttributes<HTMLElement> {
 const FaqSection = React.forwardRef<HTMLElement, FaqSectionProps>(
   ({ className, title, description, items, contactInfo, ...props }, ref) => {
     return (
-    //   <section
-    //     ref={ref}
-    //     className={cn(
-    //       "py-16 w-full bg-gradient-to-b from-transparent via-muted/50 to-transparent",
-    //       className
-    //     )}
-    //     {...props}
-    //   >
-        <div className="container">
-          {/* Header */}
-          {/* <motion.div
+      //   <section
+      //     ref={ref}
+      //     className={cn(
+      //       "py-16 w-full bg-gradient-to-b from-transparent via-muted/50 to-transparent",
+      //       className
+      //     )}
+      //     {...props}
+      //   >
+      <div className="container">
+        {/* Header */}
+        {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -49,20 +49,20 @@ const FaqSection = React.forwardRef<HTMLElement, FaqSectionProps>(
             )}
           </motion.div> */}
 
-          {/* FAQ Items */}
-          <div className="max-w-2xl mx-auto space-y-2">
-            {items.map((item, index) => (
-              <FaqItem
-                key={index}
-                question={item.question}
-                answer={item.answer}
-                index={index}
-              />
-            ))}
-          </div>
+        {/* FAQ Items */}
+        <div className="max-w-2xl mx-auto space-y-2">
+          {items.map((item, index) => (
+            <FaqItem
+              key={index}
+              question={item.question}
+              answer={item.answer}
+              index={index}
+            />
+          ))}
+        </div>
 
-          {/* Contact Section */}
-          {/* {contactInfo && (
+        {/* Contact Section */}
+        {/* {contactInfo && (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -83,8 +83,8 @@ const FaqSection = React.forwardRef<HTMLElement, FaqSectionProps>(
               </Button>
             </motion.div>
           )} */}
-        </div>
-    // </section> 
+      </div>
+      // </section>
     );
   }
 );
@@ -109,7 +109,7 @@ const FaqItem = React.forwardRef<
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.2, delay: index * 0.1 }}
       className={cn(
-        "group rounded-lg",
+        "group rounded-lg flex flex-col",
         "transition-all duration-200 ease-in-out",
         "border border-white/50 rounded-xl",
         isOpen
@@ -124,7 +124,7 @@ const FaqItem = React.forwardRef<
       >
         <h3
           className={cn(
-            "text-base font-medium transition-colors duration-200 text-left",
+            "text-base font-medium transition-colors duration-200 text-left text-wrap",
             "text-foreground/70",
             isOpen && "text-foreground"
           )}
