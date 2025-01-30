@@ -68,22 +68,24 @@ export function PricingCards({
                 <div className="space-y-4">
                   <h3
                     className={cn(
-                      "text-lg uppercase tracking-wider font-medium text-white"
+                      "text-lg uppercase tracking-wider poppins-medium text-white"
                     )}
                   >
                     {tier.name}
                   </h3>
                   <div className="flex items-baseline gap-2">
-                    <span className={cn("text-5xl font-light text-white")}>
+                    <span className={cn("text-5xl poppins-light text-white")}>
                       ${tier.price}
                     </span>
-                    <span className={cn("text-sm text-neutral-400")}>
+                    <span
+                      className={cn("text-sm text-neutral-400 poppins-light")}
+                    >
                       {tier.interval || "one-time"}
                     </span>
                   </div>
                   <p
                     className={cn(
-                      "text-sm pb-6 border-b text-white/90 text-left"
+                      "text-sm pb-6 border-b text-white/90 text-left poppins-regular"
                       // tier.highlight
                       // ? "text-neutral-400 border-neutral-800"
                       // : "text-neutral-400 border-neutral-200 dark:border-neutral-800"
@@ -95,7 +97,10 @@ export function PricingCards({
 
                 <div className="mt-8 space-y-4 flex-grow">
                   {tier.features.map((feature) => (
-                    <div key={feature} className="flex items-center gap-3">
+                    <div
+                      key={feature}
+                      className="flex items-center gap-3 inter-description"
+                    >
                       <div
                         className={cn(
                           "flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-white"
@@ -121,7 +126,7 @@ export function PricingCards({
                   <div className="mt-8">
                     <Button
                       className={cn(
-                        "w-full h-12 group relative",
+                        "w-full h-12 group relative rounded-3xl poppins-bold",
                         tier.highlight
                           ? "bg-white hover:bg-neutral-100 text-neutral-900"
                           : " bg-white hover:bg-neutral-100 text-neutral-900",
@@ -132,7 +137,7 @@ export function PricingCards({
                     >
                       {tier.cta.href ? (
                         <a href={tier.cta.href}>
-                          <span className="relative z-10 flex items-center justify-center gap-2 font-medium tracking-wide">
+                          <span className="relative z-10 flex items-center justify-center gap-2  tracking-wide">
                             {tier.cta.text}
                             <ArrowRightIcon className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                           </span>

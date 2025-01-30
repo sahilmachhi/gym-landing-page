@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Facebook, Instagram, Twitter, Youtube, Mail } from "lucide-react"
+// import { Facebook, Instagram, Twitter, Youtube, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { content } from "@/lib/constant"
@@ -9,10 +9,10 @@ const {footer} = content
     <footer className="bg-black text-blue-100 py-12">
 
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 poppins-bold">
+          <div >
             <h2 className="text-xl font-bold mb-4 text-white">Quick Links</h2>
-            <ul className="space-y-2">
+            <ul className="space-y-2 inter-description">
               {footer.quickLinks.map((link) => (
                 <li key={link.name}>
                   <Link href={link.href} className="hover:text-blue-300 transition-colors">
@@ -24,8 +24,8 @@ const {footer} = content
           </div>
           <div>
             <h2 className="text-xl font-bold mb-4 text-white">Support</h2>
-            <ul className="space-y-2">
-              {footer.quickLinks.map((link) => (
+            <ul className="space-y-2 inter-description">
+              {footer.support.map((link) => (
                 <li key={link.name}>
                   <Link href={link.href} className="hover:text-blue-300 transition-colors">
                     {link.name}
@@ -36,7 +36,7 @@ const {footer} = content
           </div>
           <div>
             <h2 className="text-xl font-bold mb-4 text-white">Contact Info</h2>
-            <address className="not-italic">
+            <address className="not-italic inter-description">
               <p>{footer.contactInfo.address}</p>
               <p className="mt-2">
                 <a href={`mailto:${footer.contactInfo.email}`} className="hover:text-blue-300 transition-colors">
@@ -53,21 +53,21 @@ const {footer} = content
           </div>
           <div>
             <h2 className="text-xl font-bold mb-4 text-white">{footer.newsletter.title}</h2>
-            <p className="mb-4">{footer.newsletter.description}</p>
-            <form className="flex flex-col space-y-2">
+            <p className="mb-4 inter-description">{footer.newsletter.description}</p>
+            <form className="flex flex-col space-y-2 inter-description">
               <Input
                 type="email"
                 placeholder="Enter your email"
                 className="bg-blue-800 text-blue-100 border-blue-700 focus:border-blue-600 placeholder-blue-400"
               />
-              <Button type="submit" className="bg-green-600 hover:bg-green-700 text-white">
+              <Button type="submit" className="bg-green-600 hover:bg-green-700 text-white poppins-medium">
                 Subscribe
               </Button>
             </form>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-blue-800">
-          <div className="flex flex-wrap justify-between items-center">
+          <div className="flex flex-wrap justify-between items-center poppins-medium">
             <p>&copy; {new Date().getFullYear()} YourGym. All rights reserved.</p>
             <div className="flex space-x-4 mt-4 lg:mt-0">
               {footer.socialMedia.map((social) => (

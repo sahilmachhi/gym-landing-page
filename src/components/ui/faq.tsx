@@ -3,21 +3,21 @@
 
 import * as React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, Mail } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
 interface FaqSectionProps extends React.HTMLAttributes<HTMLElement> {
   title?: string;
   description?: string;
-  items: {
+  items?: {
     question: string;
     answer: string;
   }[];
   contactInfo?: {
-    title: string;
-    description: string;
-    buttonText: string;
+    title?: string;
+    description?: string;
+    buttonText?: string;
     onContact?: () => void;
   };
 }
@@ -124,7 +124,7 @@ const FaqItem = React.forwardRef<
       >
         <h3
           className={cn(
-            "text-base font-medium transition-colors duration-200 text-left text-wrap",
+            "text-base poppins-medium transition-colors duration-200 text-left text-wrap",
             "text-foreground/70",
             isOpen && "text-foreground"
           )}
@@ -166,7 +166,7 @@ const FaqItem = React.forwardRef<
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: -10, opacity: 0 }}
-                className="text-sm text-muted-foreground leading-relaxed text-left"
+                className="text-sm text-muted-foreground leading-relaxed text-left inter-description"
               >
                 {answer}
               </motion.p>

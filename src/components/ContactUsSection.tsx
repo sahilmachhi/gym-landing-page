@@ -4,20 +4,19 @@ import {Input} from "@/components/ui/input"
 import {Textarea} from "@/components/ui/textarea"
 import {Card, CardContent} from "@/components/ui/card"
 import {MessageSquare, Phone} from 'lucide-react'
-import { start } from "repl"
 import {content} from "../lib/constant"
 export default function ContactSection() {
     const {contact} = content
     return (
         <div className='pt-[140px]' id="contact">
             <section className='mx-auto text-center flex items-center flex-col justify-center container px-10'>
-                <h2 className='text-center text-3xl font-bold  tracking-tight text-white md:text-5xl max-w-4xl'>{contact.header}</h2>
-                <p className='text-center text-2xl mt-6 text-white/70 max-w-5xl'>{contact.description}</p>
+                <h2 className='text-center text-3xl poppins-bold  tracking-tight text-white md:text-5xl max-w-4xl'>{contact.header}</h2>
+                <p className='text-center text-2xl mt-6 text-white/70 max-w-5xl inter-description'>{contact.description}</p>
 
                 {/* Main Grid */}
                 <div className="grid md:grid-cols-2 gap-8 w-full max-w-6xl mt-8">
                     {/* Left Column - Contact Cards */}
-                    <div className="space-y-6">
+                    <div className="space-y-6 poppins-black">
                         {/* Call Us Card */}
                         <Card className="bg-[#6366F1] text-white border-none rounded-3xl">
                             <CardContent className="p-6">
@@ -49,14 +48,14 @@ export default function ContactSection() {
                                     }
                                 }>{contact.email.email}</h3>
                                 <Button className="w-full bg-black text-[#d0d4db] hover:text-white hover:bg-black rounded-3xl">
-                                    Contact Us
+                                    Email Us
                                 </Button>
                             </CardContent>
                         </Card>
                     </div>
 
                     {/* Right Column - Contact Form */}
-                    <div className="space-y-6">
+                    <div className="space-y-6 poppins-medium">
                         <div className="space-y-4">
                             <Input type="text" placeholder="Name" className="h-12 px-4 rounded-3xl border border-[#b4b6b9]"/>
                             <div className="grid grid-cols-2 gap-4">
@@ -64,7 +63,7 @@ export default function ContactSection() {
                                 <Input type="tel" placeholder="Phone Number" className="h-12 px-4 rounded-3xl"/>
                             </div>
                             <Textarea placeholder="Message Here..." className="min-h-[200px] resize-none p-4 rounded-3xl"/>
-                            <Button className="w-full h-12 rounded-3xl  text-black bg-white hover:bg-white">
+                            <Button className="w-full h-12 rounded-3xl  text-black bg-white hover:bg-white poppins-bold">
                                 Send Message
                             </Button>
                         </div>

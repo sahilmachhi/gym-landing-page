@@ -31,7 +31,7 @@ const Navbar = () => {
             </a>
           ))}{" "}
         </nav>
-        <HoverButton className="hidden lg:block">Get Started</HoverButton>
+        <HoverButton className="hidden lg:block poppins-bold">Get Started</HoverButton>
         {/* <div className="w-auto">
           <button className="text-white">Get Started</button>
         </div> */}

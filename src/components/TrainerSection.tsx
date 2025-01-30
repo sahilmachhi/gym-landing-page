@@ -9,9 +9,9 @@ const TrainerSection = () => {
     <>
     <div className='pt-[140px]' id='trainer'>
         <section className='mx-auto text-center flex items-center flex-col justify-center container px-10'>
-       <div>
-       <h2 className='text-center text-3xl font-bold  tracking-tight text-white md:text-5xl max-w-4xl'>{trainer.header}</h2>
-            <p className='text-center text-2xl mt-6 text-white/70 max-w-5xl'>{trainer.description}</p>
+       <div className='flex flex-col items-center justify-center'>
+       <h2 className='text-center text-3xl font-bold  tracking-tight text-white md:text-5xl max-w-4xl poppins-bold'>{trainer.header}</h2>
+            <p className='text-center text-2xl mt-6 text-white/70 max-w-5xl inter-description'>{trainer.description}</p>
        </div>
          <div className='z-10 w-full mt-12'>
          <FocusCards cards={trainer.trainers}  />

@@ -36,22 +36,20 @@ export const Card = React.memo(
         )}
       >
         <div className="text-left">
-          <h3 className="text-xl md:text-2xl font-bold text-white drop-shadow [text-shadow:2px_2px_4px_black]">
-          {card.name}
+          <h3 className="text-xl md:text-2xl poppins-bold text-white drop-shadow [text-shadow:2px_2px_4px_black]">
+            {card.name}
           </h3>
-          <p className="text-white/90 drop-shadow [text-shadow:2px_2px_4px_black] ">
-          {card.experience} of experience
+          <p className="text-white/90 drop-shadow [text-shadow:2px_2px_4px_black] inter-description">
+            {card.experience} of experience
           </p>
-          <p className="[text-shadow:2px_2px_4px_black] text-white/90">
-            spacialization in {" "}
-          {card.specialization}
+          <p className="[text-shadow:2px_2px_4px_black] text-white/90 inter-description">
+            spacialization in {card.specialization}
           </p>
-          <p className="[text-shadow:2px_2px_4px_black] text-white font-medium italic text-lg">
-          '{card.quote}'
+          <p className="[text-shadow:2px_2px_4px_black] text-white poppins-light-italic italic text-lg">
+            {card.quote}
           </p>
         </div>
-        <div>
-        </div>
+        <div></div>
       </div>
     </div>
   )
@@ -69,17 +67,17 @@ export function FocusCards({ cards }: { cards: any[] }) {
 
   return (
     <>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto md:px-8 w-full">
-      {cards.map((card, index) => (
-        <Card
-          key={index}
-          card={card}
-          index={index}
-          hovered={hovered}
-          setHovered={setHovered}
-        />
-      ))}
-    </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto md:px-8 w-full">
+        {cards.map((card, index) => (
+          <Card
+            key={index}
+            card={card}
+            index={index}
+            hovered={hovered}
+            setHovered={setHovered}
+          />
+        ))}
+      </div>
     </>
   );
 }

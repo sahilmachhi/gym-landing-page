@@ -7,10 +7,10 @@ const GallarySection = () => {
     <>
       <div className="mt-[140px]">
         <section className="mx-auto text-center flex items-center flex-col justify-center container px-10">
-          <h2 className="text-center text-3xl font-bold  tracking-tight text-white md:text-5xl max-w-4xl">
+          <h2 className="text-center text-3xl poppins-bold  tracking-tight text-white md:text-5xl max-w-4xl">
             {header}
           </h2>
-          <p className="text-center text-2xl mt-6 text-white/70 max-w-5xl">
+          <p className="text-center text-2xl mt-6 text-white/70 max-w-5xl inter-description">
             {description}
           </p>
           <div className="grid grid-cols-3 gap-4 mt-10">

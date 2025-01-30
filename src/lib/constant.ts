@@ -265,7 +265,7 @@ export const content = {
       "Have questions or need assistance? Reach out using the contact form, email, or phone. You can also visit us—check the map for directions. We’re here to help you start your fitness journey!",
     phone: {
       phoneHeader: "Call Us Directly At",
-      phoneNumber: 470 - 601 - 1911,
+      phoneNumber: "470 - 601 - 1911",
     },
     email: {
       emailHeader: "Chat With Our Team",

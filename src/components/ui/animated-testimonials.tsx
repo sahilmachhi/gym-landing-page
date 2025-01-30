@@ -100,7 +100,7 @@ export const AnimatedTestimonials = ({
         </div>
 
         {/* Text Section */}
-        <div className="flex justify-between flex-col py-4">
+        <div className="flex lg:items-start items-center justify-between flex-col py-4">
           <motion.div
             key={active}
             initial={{ y: 20, opacity: 0 }}
@@ -111,13 +111,13 @@ export const AnimatedTestimonials = ({
               ease: "easeInOut",
             }}
           >
-            <h3 className="text-2xl font-bold text-white">
+            <h3 className="text-2xl poppins-bold text-white ">
               {testimonials[active].name}
             </h3>
-            <p className="text-sm text-gray-500 dark:text-neutral-500">
+            <p className="text-sm text-gray-500 dark:text-neutral-500 poppins-medium">
               {testimonials[active].designation}
             </p>
-            <motion.p className="text-lg text-gray-500 mt-8 dark:text-neutral-300">
+            <motion.p className="text-lg text-gray-500 mt-8 dark:text-neutral-300 inter-description ">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
