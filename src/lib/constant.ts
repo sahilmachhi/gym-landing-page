@@ -15,8 +15,6 @@ import imageOne from "../../public/gallary/66c718c13f75fe606893703a_gallery-imag
 import imageTwo from "../../public/gallary/66c718c13f75fe606893703b_gallery-image-01.jpg";
 import imageThree from "../../public/gallary/66c718c13f75fe606893704b_gallery-image-04.jpg";
 import imageFour from "../../public/gallary/66c718c13f75fe606893704c_gallery-image-03.jpg";
-// import imageFive from "../../public/gallary/66c718c13f75fe606893703a_gallery-image-06.avif";
-// import imageSix from "../../public/gallary/66c718c13f75fe606893703a_gallery-image-07.avif";
 
 // trainer images
 import Priya from "../../public/GymTrainers/Personal-Trainer-Portraits.jpg";

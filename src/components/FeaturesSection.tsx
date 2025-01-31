@@ -17,7 +17,7 @@ const FeaturesSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
           {feature.CardContent.map(({ title, description, image, CTA }, i) => (
             <CardContainer key={i} className="inter-var border-zinc-900">
-              <CardBody className="flex flex-col items-center justify-around hover:from-muted/60 hover:to-muted/20 hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-grid-pattern-light size-full bg-repeat bg-[length:30px_30px]  border-white/[0.2] rounded-xl border w-full h-[660px] px-4 py-8">
+              <CardBody className="flex flex-col items-center justify-around hover:from-muted/60 hover:to-muted/20 hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-grid-pattern-light size-full bg-repeat bg-[length:30px_30px]  border-white/[0.2] rounded-xl border w-full h-[720px] px-4 py-8">
                 <CardItem
                   className="text-4xl poppins-bold text-white"
                   translateZ={70}

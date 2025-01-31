@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 interface FaqSectionProps extends React.HTMLAttributes<HTMLElement> {
   title?: string;
   description?: string;
-  items?: {
+  items: {
     question: string;
     answer: string;
   }[];
