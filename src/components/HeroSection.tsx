@@ -31,7 +31,7 @@ const Hero = () => {
               <span className="text-black bg-white/70 rounded-full px-4">
                 <SparklesText
                   text={hero.Highlight}
-                  className="md:text-7xl text-5xl px-4 poppins-black !leading-[1.3]"
+                  className="md:text-7xl text-5xl px-4 playfair-display-bold !leading-[1.3]"
                 />
               </span>
             </h1>
